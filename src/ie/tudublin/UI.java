@@ -28,33 +28,64 @@ public class UI extends PApplet
 		separate(381);
 		separate(1);
 		separate(92);
+
+		loadColours();
+		printColours();
 	}
 
 	public void setup() 
 	{
 		loadColours();
+		loadResistors();
 	}
 	
+
 	public void draw()
 	{			
 
 	}
 
-	public void loadColours()
+
+    public void loadColours()
 	{
 		Table table = new Table();
 
+		
 		table = loadTable("colours.csv", "header");
 
-		for(TableRow tr:table.rows())
-        {
-            Colour c = new Colour(tr);
-            colours.add(c);
-        }       
+		for (TableRow row : table.rows()) 
+		{
+			
+			String colour = row.getString("colour");
+			int r = row.getInt("r");
+			int g = row.getInt("g");
+			int b = row.getInt("b");
+			
+			Colour c;
+			c = new Colour();
+			
+			c.setColour(colour);
+			c.r = r;
+			c.g = g;
+			c.b = b;
 
-		//String colour = row.getString("colour");
+			colours.add(c);
+		}      
 	}
 
+	private void printColours()
+	{
+		
+	}
 
+	private void loadResistors() 
+	{
+
+	}
+
+	private void printResistors()
+	{
+
+	}
 
 }
