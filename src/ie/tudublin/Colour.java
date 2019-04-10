@@ -17,7 +17,10 @@ public class Colour extends PApplet
 
     
 
-    public void colour()
+    public Colour(TableRow tr) {
+	}
+
+	public void colour()
     {
 
     }
@@ -28,4 +31,14 @@ public class Colour extends PApplet
         displayName = colour + Integer.toString(r) + Integer.toString(g) + Integer.toString(b) + Integer.toString(value);
         return displayName;
     }
+
+
+    
+
+    // public void printColours()
+    // {
+    //     for (Colour  : stars) {
+    //         System.out.println(star);
+    //     }
+    // }
 }

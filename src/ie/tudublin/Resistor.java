@@ -8,7 +8,11 @@ import processing.data.TableRow;
 
 public class Resistor extends PApplet
 
+
+
 {	
+
+    ArrayList<Resistor> resistors = new ArrayList<Resistor>();
 
     public int ones;
     public int tens;
@@ -27,4 +31,11 @@ public class Resistor extends PApplet
         println(ones);
     }
 
+    public void loadResistors()
+	{
+		Table table = new Table();
+
+		table = loadTable("resistors.csv", "header");
+
+    }
 }

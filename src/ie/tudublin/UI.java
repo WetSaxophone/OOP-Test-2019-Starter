@@ -46,8 +46,15 @@ public class UI extends PApplet
 
 		table = loadTable("colours.csv", "header");
 
-		String colour = row.getString("colour");
+		for(TableRow tr:table.rows())
+        {
+            Colour c = new Colour(tr);
+            colours.add(c);
+        }       
+
+		//String colour = row.getString("colour");
 	}
+
 
 
 }
