@@ -100,14 +100,4 @@ public class Colour extends PApplet
     public void setValue(int value) {
         this.value = value;
     }
-
-
-    
-
-    // public void printColours()
-    // {
-    //     for (Colour  : stars) {
-    //         System.out.println(star);
-    //     }
-    // }
 }
