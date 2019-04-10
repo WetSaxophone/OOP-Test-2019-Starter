@@ -3,12 +3,8 @@ package ie.tudublin;
 import java.util.ArrayList;
 
 import processing.core.PApplet;
-import processing.data.Table;
-import processing.data.TableRow;
 
 public class Resistor extends PApplet
-
-
 
 {	
 
@@ -21,7 +17,7 @@ public class Resistor extends PApplet
 
     
 
-    public void Resistor()
+    public void Resistors()
     {
         int hundreds = (value / 100);
         int tens = (value - (hundreds * 100)) / 10;
@@ -29,13 +25,5 @@ public class Resistor extends PApplet
         print(hundreds + ",");
         print(tens + ",");
         println(ones);
-    }
-
-    public void loadResistors()
-	{
-		Table table = new Table();
-
-		table = loadTable("resistors.csv", "header");
-
     }
 }

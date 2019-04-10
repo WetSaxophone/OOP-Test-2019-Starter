@@ -42,6 +42,9 @@ public class UI extends PApplet
 
 	public void draw()
 	{			
+		background(255);
+		stroke(0);
+		
 
 	}
 
