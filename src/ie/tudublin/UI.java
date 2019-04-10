@@ -32,6 +32,7 @@ public class UI extends PApplet
 
 	public void setup() 
 	{
+		loadColours();
 	}
 	
 	public void draw()
@@ -39,13 +40,14 @@ public class UI extends PApplet
 
 	}
 
-	public loadColours()
+	public void loadColours()
 	{
-		Table table = new Table("colours.csv.","header");
+		Table table = new Table();
 
-		for(Table table: row)
-		{
-			
-		}
+		table = loadTable("colours.csv", "header");
+
+		String colour = row.getString("colour");
 	}
+
+
 }

@@ -25,7 +25,7 @@ public class Colour extends PApplet
     public String toString()
     {
         String displayName;
-        displayName = colour + integer.toString(r) + integer.toString(g) + integer.toString(b) + integer.toString(value);
+        displayName = colour + Integer.toString(r) + Integer.toString(g) + Integer.toString(b) + Integer.toString(value);
         return displayName;
     }
 }

@@ -6,7 +6,7 @@ import processing.core.PApplet;
 import processing.data.Table;
 import processing.data.TableRow;
 
-public class Colour extends PApplet
+public class Resistor extends PApplet
 
 {	
 
@@ -27,10 +27,4 @@ public class Colour extends PApplet
         println(ones);
     }
 
-    public String toString()
-    {
-        String displayName;
-        displayName = colour + integer.toString(r) + integer.toString(g) + integer.toString(b) + integer.toString(value);
-        return displayName;
-    }
 }
